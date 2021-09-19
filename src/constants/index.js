@@ -1,0 +1,12 @@
+// export const API_URL = "http://localhost";
+// export const USERNAME = "admin@api-server.test";
+// export const PASSWORD = "changethis";
+export const API_URL = "https://portal-api.54-246-45-69.nip.io";
+export const USERNAME = "demo@summa-systems.com";
+export const PASSWORD = "oEd5mTzxB4TFtWifdxXg2q";
+export const API_PATH = "/api/v1/";
+export const ICON_HOME = 'assets/image/home.svg';
+export const ICON_LOCATION_ARROW = 'assets/image/location_arrow.svg';
+export const ICON_STATS = 'assets/image/stats.svg';
+export const ICON_BELL = 'assets/image/bell.svg';
+export const ICON_ACCOUNT = 'assets/image/account.svg';

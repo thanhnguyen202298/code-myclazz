@@ -1,0 +1,79 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+
+    "parserOptions": {
+        "sourceType": "module"
+    },
+
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb",
+        "airbnb/hooks",
+        "prettier",
+        "plugin:import/typescript"
+    ],
+
+    "plugins": ["react", "react-hooks"],
+
+    "rules": {
+        "max-lines": ["error", 250],
+        "max-len": [2, 120, 2],
+        // "no-console": ["error", { "allow": ["warn", "error"] }],
+        "operator-linebreak": 0, // ["error", "after"],
+        "import/no-named-as-default": 0,
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "import/no-extraneous-dependencies": 0,
+        "import/extensions": 0,
+        "arrow-parens": ["error", "always"],
+        "react/react-in-jsx-scope": 0,
+        "react/jsx-props-no-spreading": 0,
+        "react/jsx-wrap-multilines": [
+            "error",
+            {
+                "prop": "ignore"
+            }
+        ],
+        "no-unused-expressions": 0,
+        "react/forbid-prop-types": 0,
+        "react/jsx-one-expression-per-line": 0,
+        "react/jsx-filename-extension": 0,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
+        "jsx-a11y/no-noninteractive-element-interactions": 0,
+        "func-names": ["error", "always", { "generators": "never" }],
+        "generator-star-spacing": 0,
+        "object-curly-newline": ["error", { "consistent": true }],
+        "no-param-reassign": ["error", { "ignorePropertyModificationsFor": ["self"] }],
+        "import/order": [
+            "error",
+            {
+                "groups": ["builtin", "external", ["internal", "parent", "sibling", "index"]],
+                "pathGroups": [{ "pattern": "~/**", "group": "internal" }],
+                "newlines-between": "always",
+                "alphabetize": { "order": "asc", "caseInsensitive": true }
+            }
+        ]
+    },
+
+    "settings": {
+        "import/resolver": {
+            "node": {},
+            "webpack": {},
+            "typescript": {}
+        }
+    }
+}
